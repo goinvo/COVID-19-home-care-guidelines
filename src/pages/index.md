@@ -1,7 +1,6 @@
 ---
 templateKey: index-page
 title: Great coffee with a conscience
-image: /img/home-jumbotron.jpg
 heading: Great coffee with a conscience
 subheading: Support sustainable farming while enjoying a cup
 mainpitch:
@@ -11,6 +10,19 @@ mainpitch:
     shouldn't just taste good, it should do good too. We source all of our beans
     directly from small scale sustainable farmers and make sure part of the
     profits are reinvested in their communities.
+image: /img/home-jumbotron.jpg
+aboutSection:
+  text: >-
+    We created this document to attempt to walk you through what you may need to
+    do to **care for yourself or someone else who has COVID-19 in your home.**
+    Please make sure you are seeking guidance from a licensed medical
+    professional and not taking medical advice off of the internet.
+
+
+    You can help us make this resource better; you can **leave comments and
+    suggest revisions
+    [here](https://docs.google.com/document/d/1yThBEOwwhT2EQNmnuoaebv-Hpdd7hIcOew399JMBByA/edit).**
+  title: About It.
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
   java’s origin and support the farmers that grew it. We take coffee production,
