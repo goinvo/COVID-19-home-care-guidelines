@@ -46,7 +46,7 @@ const TemplateWrapper = ({ children }) => {
         <meta property="twitter:title" content="A Coronavirus Guide For At Home Care" />
         <meta property="twitter:description" content="An illustrated guide for how to help someone who has COVID-19 at home." />
         <meta property="twitter:image" content={`${withPrefix('/')}img/og-image.jpg`} />
-        <meta property="og:url" content="http://www.homecarebasics.org" />
+        <meta property="og:url" content="/" />
         <meta property="og:title" content="A Coronavirus Guide For At Home Care" />
         <meta property="og:description" content="An illustrated guide for how to help someone who has COVID-19 at home." />
         <meta property="og:image" content={`${withPrefix('/')}img/og-image.jpg`} />
