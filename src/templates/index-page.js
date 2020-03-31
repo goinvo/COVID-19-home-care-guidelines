@@ -124,7 +124,7 @@ export const IndexPageTemplate = ({
                     <ul className="simple-list">
                       {versions.map(v => {
                         return (
-                          <li><a href={v.link}>{v.language}</a></li>
+                          <li className="has-text-weight-semibold"><a href={v.link}>{v.language}</a></li>
                         )
                       })}
                     </ul>
