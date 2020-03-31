@@ -1,82 +1,41 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
-heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
-mainpitch:
-  title: Why Kaldi
-  description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
-image: /img/home-jumbotron.jpg
+title: A Coronavirus Guide For At Home Care
+image: "/img/home-jumbotron.png"
+heading: A Coronavirus Guide For At Home Care
+subheading: How to help someone who has COVID-19 at home
 aboutSection:
-  text: >-
-    We created this document to attempt to walk you through what you may need to
-    do to **care for yourself or someone else who has COVID-19 in your home.**
-    Please make sure you are seeking guidance from a licensed medical
-    professional and not taking medical advice off of the internet.
-
-
-    You can help us make this resource better; you can **leave comments and
-    suggest revisions
-    [here](https://docs.google.com/document/d/1yThBEOwwhT2EQNmnuoaebv-Hpdd7hIcOew399JMBByA/edit).**
   title: About It.
-description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
-intro:
-  blurbs:
-    - image: /img/coffee.png
-      text: >
-        We sell green and roasted coffee beans that are sourced directly from
-        independent farmers and farm cooperatives. We’re proud to offer a
-        variety of coffee beans grown with great care for the environment and
-        local communities. Check our post or contact us directly for current
-        availability.
-    - image: /img/coffee-gear.png
-      text: >
-        We offer a small, but carefully curated selection of brewing gear and
-        tools for every taste and experience level. No matter if you roast your
-        own beans or just bought your first french press, you’ll find a gadget
-        to fall in love with in our shop.
-    - image: /img/tutorials.png
-      text: >
-        Love a great cup of coffee, but never knew how to make one? Bought a
-        fancy new Chemex but have no clue how to use it? Don't worry, we’re here
-        to help. You can schedule a custom 1-on-1 consultation with our baristas
-        to learn anything you want to know about coffee roasting and brewing.
-        Email us or call the store for details.
-    - image: /img/meeting-space.png
-      text: >
-        We believe that good coffee has the power to bring people together.
-        That’s why we decided to turn a corner of our shop into a cozy meeting
-        space where you can hang out with fellow coffee lovers and learn about
-        coffee making techniques. All of the artwork on display there is for
-        sale. The full price you pay goes to the artist.
-  heading: What we offer
-  description: >
-    Kaldi is the ultimate spot for coffee lovers who want to learn about their
-    java’s origin and support the farmers that grew it. We take coffee
-    production, roasting and brewing seriously and we’re glad to pass that
-    knowledge to anyone. This is an edit via identity...
-main:
-  heading: Great coffee with no compromises
-  description: >
-    We hold our coffee to the highest standards from the shrub to the cup.
-    That’s why we’re meticulous and transparent about each step of the coffee’s
-    journey. We personally visit each farm to make sure the conditions are
-    optimal for the plants, farmers and the local environment.
-  image1:
-    alt: A close-up of a paper filter filled with ground coffee
-    image: /img/products-grid3.jpg
-  image2:
-    alt: A green cup of a coffee on a wooden table
-    image: /img/products-grid2.jpg
-  image3:
-    alt: Coffee beans
-    image: /img/products-grid1.jpg
+  text:
+    We created this document to attempt to walk you through what you may need to do to care for yourself or someone else who has COVID-19 in your home. Please make sure you are seeking guidance from a licensed medical professional and not taking medical advice off of the internet. You can help us make this resource better; you can leave comments and suggest revisions here.
+useSection:
+  title: Use It.
+  text:
+    "Last Update: 26 March 2020
+    Download the latest version of the document below."
+versions:
+  - language: English
+    link: https://docs.google.com/document/d/1yThBEOwwhT2EQNmnuoaebv-Hpdd7hIcOew399JMBByA/edit?ts=5e721bba&pli=1
+shareSection:
+  title: Share It.
+  text:
+    This work is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License. This means you can share it, use it, and adapt it for absolutely free. Make this resource best to fit your local needs.
+    To view a copy of this license, visit creativecommons.org/licenses/by-nc/4.0/
+translateSection:
+  title: Translate It.
+  text:
+    "COVID-19 is affecting people all over the world; this information could help a lot of sick people recover without spreading it to others. Please feel free to translate this document into any language and share it with others. You can share your translation, offer to make a translation, or request a translation at coronavirus@goinvo.com."
+inProgress:
+  - German
+  - Italian
+requested:
+  - Korean
+  - Portuguese
+  - Traditional Chinese
+contributors:
+  - John Wilbanks
+  - Colleen Tang Poy
+  - Harper Reed
+  - Juhan Sonin
+  - Craig McGinley
 ---

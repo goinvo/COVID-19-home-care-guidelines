@@ -11,9 +11,14 @@ export const IndexPageTemplate = ({
   title,
   heading,
   subheading,
-  mainpitch,
-  description,
-  intro,
+  aboutSection,
+  useSection,
+  versions,
+  shareSection,
+  translateSection,
+  inProgress,
+  requested,
+  contributors
 }) => (
   <div>
     <div
@@ -22,27 +27,28 @@ export const IndexPageTemplate = ({
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
-        backgroundPosition: `top left`,
-        backgroundAttachment: `fixed`,
+        backgroundPosition: `top center`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        height: 'auto',
+        padding: '20px 30px'
       }}
     >
       <div
         style={{
           display: 'flex',
-          height: '150px',
           lineHeight: '1',
           justifyContent: 'space-around',
-          alignItems: 'left',
+          alignItems: 'flex-end',
           flexDirection: 'column',
         }}
       >
         <h1
           className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
           style={{
-            boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
-            color: 'white',
+            textShadow:
+              '3px 1px white',
+            color: 'black',
             lineHeight: '1',
             padding: '0.25em',
           }}
@@ -52,10 +58,7 @@ export const IndexPageTemplate = ({
         <h3
           className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
           style={{
-            boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
-            color: 'white',
+            color: 'black',
             lineHeight: '1',
             padding: '0.25em',
           }}
@@ -70,39 +73,97 @@ export const IndexPageTemplate = ({
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="content">
-                <div className="content">
+                {/* <div className="content">
                   <div className="tile">
                     <h1 className="title">{mainpitch.title}</h1>
                   </div>
                   <div className="tile">
                     <h3 className="subtitle">{mainpitch.description}</h3>
                   </div>
-                </div>
+                </div> */}
                 <div className="columns">
                   <div className="column is-12">
                     <h3 className="has-text-weight-semibold is-size-2">
                       {heading}
                     </h3>
-                    <p>{description}</p>
                   </div>
                 </div>
-                <Features gridItems={intro.blurbs} />
                 <div className="columns">
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/products">
-                      See all products
-                    </Link>
+                  <div className="column is-12">
+                    <h3 className="has-text-weight-semibold is-size-2">
+                      {aboutSection.title}
+                    </h3>
+                    <p>{aboutSection.text}</p>
                   </div>
                 </div>
-                <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    Latest stories
-                  </h3>
-                  <BlogRoll />
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/blog">
-                      Read more
-                    </Link>
+                <div className="columns">
+                  <div className="column is-12">
+                    <h3 className="has-text-weight-semibold is-size-2">
+                      {useSection.title}
+                    </h3>
+                    <p>{useSection.text}</p>
+                  </div>
+                </div>
+                <div className="columns">
+                  <div className="column is-12">
+                    <p>Home Care Guide</p>
+                    <ul>
+                      {versions.map(v => {
+                        return (
+                          <li><a href={v.link}>{v.language}</a></li>
+                        )
+                      })}
+                    </ul>
+                  </div>
+                </div>
+                <div className="columns">
+                  <div className="column is-12">
+                    <h3 className="has-text-weight-semibold is-size-2">
+                      {shareSection.title}
+                    </h3>
+                    <p>{shareSection.text}</p>
+                  </div>
+                </div>
+                <div className="columns">
+                  <div className="column is-12">
+                    <h3 className="has-text-weight-semibold is-size-2">
+                      {translateSection.title}
+                    </h3>
+                    <p>{translateSection.text}</p>
+                  </div>
+                </div>
+                <div className="columns">
+                  <div className="column is-6">
+                    <p>Translations in Progress</p>
+                    <ul>
+                      {inProgress.map(l => {
+                        return (
+                          <li>{l}</li>
+                        )
+                      })}
+                    </ul>
+                  </div>
+                  <div className="column is-6">
+                    <p>Current Translation Requests</p>
+                    <ul>
+                      {requested.map(l => {
+                        return (
+                          <li>{l}</li>
+                        )
+                      })}
+                    </ul>
+                  </div>
+                </div>
+                <div className="columns">
+                  <div className="column is-12">
+                    <p>Contributors</p>
+                    <ul>
+                      {contributors.map(c => {
+                        return (
+                          <li>{c}</li>
+                        )
+                      })}
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -119,11 +180,14 @@ IndexPageTemplate.propTypes = {
   title: PropTypes.string,
   heading: PropTypes.string,
   subheading: PropTypes.string,
-  mainpitch: PropTypes.object,
-  description: PropTypes.string,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array,
-  }),
+  aboutSection: PropTypes.object,
+  useSection: PropTypes.object,
+  versions: PropTypes.array,
+  shareSection: PropTypes.object,
+  translateSection: PropTypes.object,
+  inProgress: PropTypes.array,
+  requested: PropTypes.array,
+  contributors: PropTypes.array,
 }
 
 const IndexPage = ({ data }) => {
@@ -136,9 +200,14 @@ const IndexPage = ({ data }) => {
         title={frontmatter.title}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
-        mainpitch={frontmatter.mainpitch}
-        description={frontmatter.description}
-        intro={frontmatter.intro}
+        aboutSection={frontmatter.aboutSection}
+        useSection={frontmatter.useSection}
+        versions={frontmatter.versions}
+        shareSection={frontmatter.shareSection}
+        translateSection={frontmatter.translateSection}
+        inProgress={frontmatter.inProgress}
+        requested={frontmatter.requested}
+        contributors={frontmatter.contributors}
       />
     </Layout>
   )
@@ -168,25 +237,29 @@ export const pageQuery = graphql`
         }
         heading
         subheading
-        mainpitch {
+        aboutSection {
           title
-          description
+          text
         }
-        description
-        intro {
-          blurbs {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            text
-          }
-          heading
-          description
+        useSection {
+          title
+          text
         }
+        versions {
+          language
+          link
+        }
+        shareSection {
+          title
+          text
+        }
+        translateSection {
+          title
+          text
+        }
+        inProgress
+        requested
+        contributors
       }
     }
   }
