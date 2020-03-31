@@ -40,13 +40,14 @@ const TemplateWrapper = ({ children }) => {
         />
         <meta name="theme-color" content="#fff" />
 
-        <meta property="og:type" content="business.business" />
-        <meta property="og:title" content={title} />
-        <meta property="og:url" content="/" />
-        <meta
-          property="og:image"
-          content={`${withPrefix('/')}img/og-image.jpg`}
-        />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@goinvo" />
+        <meta name="twitter:creator" content="@goinvo" />
+        <meta property="og:url" content="http://www.homecarebasics.org" />
+        <meta property="og:title" content="A Coronavirus Guide For At Home Care" />
+        <meta property="og:description" content="An illustrated guide for how to help someone who has COVID-19 at home." />
+        <meta property="og:image" content={`${withPrefix('/')}img/og-image.jpg`} />
+
       </Helmet>
       {/* <Navbar /> */}
       <div>{children}</div>
