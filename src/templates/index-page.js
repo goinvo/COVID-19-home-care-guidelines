@@ -1,10 +1,32 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
+import { Helmet } from 'react-helmet'
 
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
+
+const styles = `
+  body {
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+  }
+  .underline--blue {
+    border-bottom: 6px solid #B3CBE1;
+  }
+  .underline--purple {
+    border-bottom: 6px solid #B193AB;
+  }
+  .content .simple-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .section-margin {
+    margin-top: 50px;
+  }
+`
 
 export const IndexPageTemplate = ({
   image,
@@ -21,6 +43,10 @@ export const IndexPageTemplate = ({
   contributors
 }) => (
   <div>
+    <Helmet>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,900;1,400;1,600&display=swap" rel="stylesheet" />
+      <style>{styles}</style>
+    </Helmet>
     <div
       className="full-width-image margin-top-0"
       style={{
@@ -31,7 +57,8 @@ export const IndexPageTemplate = ({
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         height: 'auto',
-        padding: '20px 30px'
+        padding: '20px 30px',
+        minHeight: '12vw',
       }}
     >
       <div
@@ -44,7 +71,7 @@ export const IndexPageTemplate = ({
         }}
       >
         <h1
-          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen is-uppercase"
           style={{
             textShadow:
               '3px 1px white',
@@ -56,7 +83,7 @@ export const IndexPageTemplate = ({
           {title}
         </h1>
         <h3
-          className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
+          className="has-text-weight-bold is-size-6-mobile is-size-5-tablet is-size-4-widescreen is-uppercase"
           style={{
             color: 'black',
             lineHeight: '1',
@@ -73,41 +100,28 @@ export const IndexPageTemplate = ({
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="content">
-                {/* <div className="content">
-                  <div className="tile">
-                    <h1 className="title">{mainpitch.title}</h1>
-                  </div>
-                  <div className="tile">
-                    <h3 className="subtitle">{mainpitch.description}</h3>
-                  </div>
-                </div> */}
                 <div className="columns">
                   <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      {heading}
-                    </h3>
-                  </div>
-                </div>
-                <div className="columns">
-                  <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      {aboutSection.title}
+                    <h3 className="has-text-weight-bold is-size-3 is-uppercase">
+                      <span className="underline--blue">{aboutSection.title}</span>
                     </h3>
                     <p>{aboutSection.text}</p>
                   </div>
                 </div>
                 <div className="columns">
                   <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      {useSection.title}
+                    <h3 className="has-text-weight-bold is-size-3 is-uppercase section-margin">
+                      <span className="underline--blue">{useSection.title}</span>
                     </h3>
                     <p>{useSection.text}</p>
                   </div>
                 </div>
                 <div className="columns">
                   <div className="column is-12">
-                    <p>Home Care Guide</p>
-                    <ul>
+                    <h4 className="is-size-5">
+                      <span className="underline--purple">Home Care Guide</span>
+                    </h4>
+                    <ul className="simple-list">
                       {versions.map(v => {
                         return (
                           <li><a href={v.link}>{v.language}</a></li>
@@ -118,24 +132,26 @@ export const IndexPageTemplate = ({
                 </div>
                 <div className="columns">
                   <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      {shareSection.title}
+                    <h3 className="has-text-weight-bold is-size-3 is-uppercase section-margin">
+                      <span className="underline--blue">{shareSection.title}</span>
                     </h3>
                     <p>{shareSection.text}</p>
                   </div>
                 </div>
                 <div className="columns">
                   <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      {translateSection.title}
+                    <h3 className="has-text-weight-bold is-size-3 is-uppercase section-margin">
+                      <span className="underline--blue">{translateSection.title}</span>
                     </h3>
                     <p>{translateSection.text}</p>
                   </div>
                 </div>
                 <div className="columns">
                   <div className="column is-6">
-                    <p>Translations in Progress</p>
-                    <ul>
+                    <h4 className="is-size-5">
+                      <span className="underline--purple">Translations in Progress</span>
+                    </h4>
+                    <ul className="simple-list">
                       {inProgress.map(l => {
                         return (
                           <li>{l}</li>
@@ -144,8 +160,10 @@ export const IndexPageTemplate = ({
                     </ul>
                   </div>
                   <div className="column is-6">
-                    <p>Current Translation Requests</p>
-                    <ul>
+                    <h4 className="is-size-5">
+                      <span className="underline--purple">Current Translation Requests</span>
+                    </h4>
+                    <ul className="simple-list">
                       {requested.map(l => {
                         return (
                           <li>{l}</li>
@@ -156,8 +174,10 @@ export const IndexPageTemplate = ({
                 </div>
                 <div className="columns">
                   <div className="column is-12">
-                    <p>Contributors</p>
-                    <ul>
+                    <h3 className="has-text-weight-bold is-size-3 is-uppercase section-margin">
+                      <span className="underline--blue">Contributors</span>
+                    </h3>
+                    <ul className="simple-list">
                       {contributors.map(c => {
                         return (
                           <li>{c}</li>
