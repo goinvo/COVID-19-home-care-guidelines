@@ -46,7 +46,7 @@ collections:
           - {label: translateSection, name: translateSection, widget: object, fields: [{label: Title, name: title, widget: string}, {label: Text, name: text, widget: markdown}]}
           - {label: inProgress, name: inProgress, widget: list, field: {label: language, name: language, widget: string}}
           - {label: requested, name: requested, widget: list, field: {label: language, name: language, widget: string}}
-          - {label: contributors, name: contributors, widget: list, field: {label: language, name: language, widget: string}}
+          - {label: contributors, name: contributors, widget: list, field: {label: name, name: name, widget: string}}
       - file: "src/pages/about/index.md"
         label: "About"
         name: "about"
