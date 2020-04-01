@@ -28,6 +28,9 @@ const styles = `
   .section-margin {
     margin-top: 50px;
   }
+  .smol-link {
+    font-size: 14px;
+  }
 `
 
 export const IndexPageTemplate = ({
@@ -126,7 +129,9 @@ export const IndexPageTemplate = ({
                     <ul className="simple-list">
                       {versions.map(v => {
                         return (
-                          <li className="has-text-weight-semibold"><a href={v.link}>{v.language}</a></li>
+                          <li className="has-text-weight-semibold">
+                            {v.language} <a href={v.link + '/export?format=pdf'}>PDF</a> | <a href={v.link}>Google Doc</a>
+                          </li>
                         )
                       })}
                     </ul>
