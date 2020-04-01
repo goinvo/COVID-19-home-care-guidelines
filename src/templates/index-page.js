@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import { Helmet } from 'react-helmet'
+import Markdown from 'react-markdown'
 
 import Layout from '../components/Layout'
 import Features from '../components/Features'
@@ -11,6 +12,9 @@ const styles = `
   body {
     font-family: Montserrat, sans-serif;
     font-size: 18px;
+  }
+  strong {
+    font-weight: 600;
   }
   .underline--blue {
     border-bottom: 6px solid #B3CBE1;
@@ -105,7 +109,7 @@ export const IndexPageTemplate = ({
                     <h3 className="has-text-weight-bold is-size-3 is-uppercase">
                       <span className="underline--blue">{aboutSection.title}</span>
                     </h3>
-                    <p>{aboutSection.text}</p>
+                    <p><Markdown source={aboutSection.text} /></p>
                   </div>
                 </div>
                 <div className="columns">
@@ -113,7 +117,7 @@ export const IndexPageTemplate = ({
                     <h3 className="has-text-weight-bold is-size-3 is-uppercase section-margin">
                       <span className="underline--blue">{useSection.title}</span>
                     </h3>
-                    <p>{useSection.text}</p>
+                    <p><Markdown source={useSection.text} /></p>
                   </div>
                 </div>
                 <div className="columns">
@@ -135,7 +139,7 @@ export const IndexPageTemplate = ({
                     <h3 className="has-text-weight-bold is-size-3 is-uppercase section-margin">
                       <span className="underline--blue">{shareSection.title}</span>
                     </h3>
-                    <p>{shareSection.text}</p>
+                    <p><Markdown source={shareSection.text} /></p>
                   </div>
                 </div>
                 <div className="columns">
@@ -143,7 +147,7 @@ export const IndexPageTemplate = ({
                     <h3 className="has-text-weight-bold is-size-3 is-uppercase section-margin">
                       <span className="underline--blue">{translateSection.title}</span>
                     </h3>
-                    <p>{translateSection.text}</p>
+                    <p><Markdown source={translateSection.text} /></p>
                   </div>
                 </div>
                 <div className="columns">
