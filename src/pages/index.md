@@ -23,7 +23,7 @@ useSection:
     **Last Update: 26 March 2020**\
 
     **Download** the latest version of the document in your language below.
-    Access the associated **Google Doc** to make **comments** ordownload the
+    Access the associated **Google Doc** to make **comments** or download the
     guide in **other file formats.**
 versions:
   - language: English
