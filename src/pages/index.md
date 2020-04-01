@@ -19,13 +19,16 @@ aboutSection:
     [here](https://docs.google.com/document/d/1yThBEOwwhT2EQNmnuoaebv-Hpdd7hIcOew399JMBByA/).
 useSection:
   title: Use It.
-  text: |-
+  text: >-
     **Last Update: 26 March 2020**\
-    Download the latest version of the document below.
+
+    **Download** the latest version of the document in your language below.
+    Access the associated **Google Doc** to make **comments** ordownload the
+    guide in **other file formats.**
 versions:
   - language: English
     link: >-
-      https://docs.google.com/document/d/1yThBEOwwhT2EQNmnuoaebv-Hpdd7hIcOew399JMBByA/
+      https://docs.google.com/document/d/1yThBEOwwhT2EQNmnuoaebv-Hpdd7hIcOew399JMBByA
 shareSection:
   title: Share It.
   text: >-
