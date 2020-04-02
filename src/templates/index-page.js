@@ -6,6 +6,8 @@ import Markdown from 'react-commonmark'
 
 import Layout from '../components/Layout'
 
+import cover from '../../static/img/cover.jpg';
+
 const styles = `
   body {
     font-family: Montserrat, sans-serif;
@@ -30,6 +32,13 @@ const styles = `
   }
   .smol-link {
     font-size: 14px;
+  }
+  .disclaimer {
+    padding-top: 50px;
+    font-size: 14px;
+  }
+  .comic-img {
+    width: 180px;
   }
 `
 
@@ -126,6 +135,7 @@ export const IndexPageTemplate = ({
                     <h4 className="is-size-5">
                       <span className="underline--purple">Home Care Guide</span>
                     </h4>
+                    <img className="comic-img" src={cover} alt="The cover of 'A COVID-19 Guide to Home Care' comic."/>
                     <ul className="simple-list">
                       {versions.map(v => {
                         return (
@@ -191,6 +201,15 @@ export const IndexPageTemplate = ({
                         )
                       })}
                     </ul>
+                  </div>
+                </div>
+                <div className="columns section-margin">
+                  <div className="column is-12">
+                    <p className="disclaimer">
+                      <strong>This website does not provide medical advice.</strong>
+                      <br />
+                      You assume full responsibility for using the information on this site, and you understand that this site and contributors are not responsible or liable for any claim, loss or damage resulting from its use by you or any user.
+                    </p>
                   </div>
                 </div>
               </div>
