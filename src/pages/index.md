@@ -28,7 +28,7 @@ useSection:
 versions:
   - language: English
     link: >-
-      https://docs.google.com/document/d/1yThBEOwwhT2EQNmnuoaebv-Hpdd7hIcOew399JMBByA
+      https://docs.google.com/document/d/1Yr0ByEemJkhL9soZcMF9YjRLMnKYcTfk-g08NR5R9T8
 shareSection:
   title: Share It.
   text: >-
