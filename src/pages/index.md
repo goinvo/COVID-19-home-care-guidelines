@@ -56,6 +56,6 @@ contributors:
   - John Wilbanks
   - Colleen Tang Poy
   - Harper Reed
-  - Juhan Sonin
   - Craig McGinley
+  - Juhan Sonin
 ---
