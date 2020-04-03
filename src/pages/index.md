@@ -22,9 +22,10 @@ useSection:
   text: >-
     **Last Update: 26 March 2020**\
 
-    **Download** the latest version of the document in your language below.
-    Access the associated **Google Doc** to make **comments** or download the
-    guide in **other file formats.**
+    **Download** the latest version of the document in your language below
+    (please note the PDF download may take a moment to process before your
+    download commences). Access the associated **Google Doc** to make
+    **comments** or download the guide in **other file formats.**
 versions:
   - language: English
     link: >-
