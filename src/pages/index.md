@@ -53,7 +53,7 @@ translateSection:
     **translation**, or **request** a translation at
     [coronavirus@goinvo.com](mailto:coronavirus@goinvo.com).
 inProgress:
-  - None yet
+  - French (translation by Alexandre Sitbon)
 requested:
   - None yet
 contributors:
