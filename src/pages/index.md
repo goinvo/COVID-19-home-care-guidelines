@@ -30,6 +30,9 @@ versions:
   - language: English
     link: >-
       https://docs.google.com/document/d/1Yr0ByEemJkhL9soZcMF9YjRLMnKYcTfk-g08NR5R9T8
+  - language: Arabic (by Silvia Botros)
+    link: >-
+      https://docs.google.com/document/d/1SnAQ04KaJf4Ph0CLuE9Ca3l9fw54Yl9EuJXn0JtjPRc
 shareSection:
   title: Share It.
   text: >-
