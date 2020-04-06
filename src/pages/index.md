@@ -20,7 +20,7 @@ aboutSection:
 useSection:
   title: Use It.
   text: >-
-    **Last Update: 26 March 2020**\
+    **Last Update: 6 April 2020**\
 
     **Download** the latest version of the document in your language below
     (please note the PDF download may take a moment to process before your
