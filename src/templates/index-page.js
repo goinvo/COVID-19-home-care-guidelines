@@ -30,6 +30,9 @@ const styles = `
   .section-margin {
     margin-top: 50px;
   }
+  .extra-margin-top {
+    margin-top: 20px;
+  }
   .smol-link {
     font-size: 14px;
   }
@@ -165,7 +168,7 @@ export const IndexPageTemplate = ({
                 </div>
                 <div className="columns">
                   <div className="column is-6">
-                    <h4 className="is-size-5">
+                    <h4 className="is-size-5 extra-margin-top">
                       <span className="underline--purple">Translations in Progress</span>
                     </h4>
                     <ul className="simple-list">
@@ -177,7 +180,7 @@ export const IndexPageTemplate = ({
                     </ul>
                   </div>
                   <div className="column is-6">
-                    <h4 className="is-size-5">
+                    <h4 className="is-size-5 extra-margin-top">
                       <span className="underline--purple">Current Translation Requests</span>
                     </h4>
                     <ul className="simple-list">
@@ -187,6 +190,49 @@ export const IndexPageTemplate = ({
                         )
                       })}
                     </ul>
+                  </div>
+                </div>
+                <div className="columns">
+                  <div className="column is-12">
+                    <h4 className="is-size-5 extra-margin-top">
+                      <span className="underline--purple">Become a translator</span>
+                    </h4>
+                    <p><strong>Contact us first</strong> at <a href="mailto:coronavirus@goinvo.com">coronavirus@goinvo.com</a> to let us know for what language you want to translate or update. We'll let you know if we have someone working on it already or if that person can be you!</p>
+                  </div>
+                </div>
+                <div className="columns">
+                  <div className="column is-12">
+                    <h4 className="is-size-5 extra-margin-top">
+                      <span className="underline--purple">Make your Translation</span>
+                    </h4>
+                    <p>
+                      You can either...<br/>
+                      <strong>A) Work in Google Docs directly</strong><br/>
+                      1. Go to the <a href="https://docs.google.com/document/d/1yThBEOwwhT2EQNmnuoaebv-Hpdd7hIcOew399JMBByA/">English version</a> of the guide in Google Docs<br/>
+                      2. File > Make a Copy<br/>
+                      3. Edit the text directly<br/>
+                      4. Let us know you are done and send the Google Doc link to <a href="mailto:coronavirus@goinvo.com">coronavirus@goinvo.com</a><br/>
+                      <br />
+                      OR<br/>
+                      <br />
+                      <strong>B) Work on a local file and upload after</strong><br/>
+                      1. Go to the <a href="https://docs.google.com/document/d/1yThBEOwwhT2EQNmnuoaebv-Hpdd7hIcOew399JMBByA/">English version</a> of the guide in Google Docs<br/>
+                      2. File > Download > Microsoft Word (.docx)<br/>
+                      3. Edit the text in Microsoft Word<br/>
+                      4. Go to Google Docs, then File > Open > Select your finished translated file<br/>
+                      5. Review and fix any formatting issues the document has from being transferred to Google Docs<br/>
+                      6. Let us know you are done and send the Google Doc link to <a href="mailto:coronavirus@goinvo.com">coronavirus@goinvo.com</a>
+                    </p>
+                  </div>
+                </div>
+                <div className="columns">
+                  <div className="column is-12">
+                    <h4 className="is-size-5 extra-margin-top">
+                      <span className="underline--purple">Update your Translation</span>
+                    </h4>
+                    <p>
+                      We realize our translators are volunteers, so there is no obligation to continue to be responsible for continuing to update the translation. However, should you want to help update a translation, please check this <a href="https://docs.google.com/spreadsheets/d/1uWbWgoXDzAxWuQnK5xCUYQgj9xIFHg0gUPP0JLDpPdA/">Google Spreadsheet</a>. Here you can easily track any of the changes made to the English guide, which will generally serve as the main source of content for the other translations. We recommend checking this spreadsheet <strong>once a week or biweekly</strong>. After making an update, please <strong>update the date</strong> at the beginning of the document to let readers know the extent to which the translation is updated.
+                    </p>
                   </div>
                 </div>
                 <div className="columns">
