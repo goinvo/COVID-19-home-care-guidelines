@@ -33,6 +33,12 @@ versions:
   - language: Arabic (translation by Silvia Botros)
     link: >-
       https://docs.google.com/document/d/1SnAQ04KaJf4Ph0CLuE9Ca3l9fw54Yl9EuJXn0JtjPRc
+  - language: French (translation by Alexandre Sitbon)
+    link: >-
+      https://docs.google.com/document/d/1Hi5Q6Gi7Kqvsj8R_BvySTWMPfx_UxfjsiDIZ6UkMU7k/
+  - language: German (translation by Christina Maria Koch)
+    link: >-
+      https://docs.google.com/document/d/17QZGnAXW2p1JJGQWI_bs6DacX8b20xXOS-jkdi7UoR4/
 shareSection:
   title: Share It.
   text: >-
@@ -53,9 +59,9 @@ translateSection:
     **translation**, or **request** a translation at
     [coronavirus@goinvo.com](mailto:coronavirus@goinvo.com).
 inProgress:
-  - French (translation by Alexandre Sitbon)
+  - None at the moment
 requested:
-  - None yet
+  - None at the moment
 contributors:
   - John Wilbanks
   - Colleen Tang Poy
