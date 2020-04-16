@@ -35,7 +35,7 @@ versions:
       https://docs.google.com/document/d/1SnAQ04KaJf4Ph0CLuE9Ca3l9fw54Yl9EuJXn0JtjPRc
   - language: French (translation by Alexandre Sitbon)
     link: >-
-      https://docs.google.com/document/d/1Hi5Q6Gi7Kqvsj8R_BvySTWMPfx_UxfjsiDIZ6UkMU7k/
+      https://docs.google.com/document/d/1Hi5Q6Gi7Kqvsj8R_BvySTWMPfx_UxfjsiDIZ6UkMU7k
   - language: German (translation by Christina Maria Koch)
     link: >-
       https://docs.google.com/document/d/17QZGnAXW2p1JJGQWI_bs6DacX8b20xXOS-jkdi7UoR4/
