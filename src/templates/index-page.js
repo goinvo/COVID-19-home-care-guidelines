@@ -45,6 +45,16 @@ const styles = `
   }
 `
 
+const injectGA = () => {
+  if (typeof window == 'undefined') {
+    return;
+  }
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){window.dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-10273473-32');
+}
+
 export const IndexPageTemplate = ({
   image,
   title,
@@ -63,6 +73,8 @@ export const IndexPageTemplate = ({
     <Helmet>
       <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,900;1,400;1,600&display=swap" rel="stylesheet" />
       <style>{styles}</style>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-10273473-32"></script>
+      <script>{ injectGA() }</script>
     </Helmet>
     <div
       className="full-width-image margin-top-0"
