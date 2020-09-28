@@ -41,7 +41,7 @@ versions:
       https://docs.google.com/document/d/17QZGnAXW2p1JJGQWI_bs6DacX8b20xXOS-jkdi7UoR4
   - language: Spanish (translation by Leila Loaiza Cordova)
     link: >-
-      https://docs.google.com/document/d/1RMs3FNVibNQkIo_tYYacpHfwqKT-BzDmRS9bEwIBDDc/
+      https://docs.google.com/document/d/1RMs3FNVibNQkIo_tYYacpHfwqKT-BzDmRS9bEwIBDDc
 shareSection:
   title: Share It.
   text: >-
